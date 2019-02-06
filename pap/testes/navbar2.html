@@ -1,0 +1,29 @@
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0;" id="rightMenu">
+  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-black">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button w3-black">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-black">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-black">Link 3</a>
+</div>
+
+<div style="width: 100%">
+  <button id="nav" style="margin-right: 2.5%;margin-top:2% " class="w3-button w3-teal w3-xlarge w3-right w3-pading-top" onclick="w3_open()">&#9776;</button>
+</div>
+     
+<script>
+function openRightMenu() {
+  document.getElementById("rightMenu").style.display = "block";
+}
+
+function w3_open() {
+  document.getElementById("main").style.marginright = "25%";
+  document.getElementById("rightMenu").style.width = "25%";
+  document.getElementById("rightMenu").style.display = "block";
+  document.getElementById("nav").style.display = 'none';
+}
+
+function closeRightMenu() {
+  document.getElementById("rightMenu").style.display = "none";
+}
+</script>
+ 
