@@ -6,8 +6,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="display:none;right:0" id="mySidebar">
-  <button class="w3-bar-item w3-button w3-large"
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none;left:0; background-color: #c4984f;" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-xlarge"
   onclick="w3_close()">&times;</button>
   <a href="sobre_nos.php" class="w3-bar-item w3-button">Sobre Nós</a>
   <a href="nossa_hist.php" class="w3-bar-item w3-button">Nossa História</a>
@@ -19,20 +19,22 @@
 
 
 
-<div class="w3-red" style="max-height: 80px;">
-  <button id="openNav" class="w3-button w3-xlarge w3-right w3-teal" style="margin-right: 2.5%;margin-top:2% " onclick="w3_open()">&#9776;</button>
+<div class="" style="max-height: 80px;">
+  <button id="openNav" class="w3-button w3-xlarge w3-left" style="margin-left: 2.5%;margin-top:2%;background-color: #c4984f  " onclick="w3_open()">&#9776;</button>
 </div>
+
+
 
 
 <script>
 function w3_open() {
-  document.getElementById("main").style.marginRight = "25%";
+  document.getElementById("main").style.marginLeft = "25%";
   document.getElementById("mySidebar").style.width = "25%";
   document.getElementById("mySidebar").style.display = "block";
  // document.getElementById("openNav").style.display = 'none';
 }
 function w3_close() {
-  document.getElementById("main").style.marginRight = "0%";
+  document.getElementById("main").style.marginLeft = "0%";
   document.getElementById("mySidebar").style.display = "none";
  // document.getElementById("openNav").style.display = "inline-block";
 }

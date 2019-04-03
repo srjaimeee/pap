@@ -1,0 +1,5 @@
+git remote add origem https://github.com/srjaimeee/pap.git
+ git push -u origem master
+
+
+wamp64/www/ricardo_andrea 

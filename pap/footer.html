@@ -1,23 +1,55 @@
 <style>
     .tamanho{
-        width: 10%;
+        width: 50%;
         height: 10%;
         margin-top: 1%;
     }
     .padding-footer{
       margin-top: 2%;
     }
+    footer{
+      background-color: #c4984f;
+    }
 </style>
-<footer class="w3-black padding-footer">
-  <div class="w3-center">
-        <img class="tamanho" src="img/img2.jpg">
+<footer class="padding-footer" id="main">
+  <div class="w3-row w3-padding">
+    <div class="w3-padding w3-col m3">
+      <img class="tamanho" src="img/footer.png"><br><br>
+      <img class="tamanho" src="img/logotipo.png">
+    </div>
+    <div class="w3-col m3">
+      <label>Ligações</label><br><br>
+      <label>Loja online</label><br>
+      <label>Instagram</label>
+    </div>
+    <div class="w3-col m3">
+      <label>Informações</label><br><br>
+      <label>Termos e condições</label><br>
+      <label>Politica privacidade</label><br>
+      <label>Proteção de dados</label>
+    </div>
+    <div class="w3-col m3">
+      <label>Contactos</label><br><br>
+      <label>Telefone:</label><br>
+      <label>Andrea - </label><br>
+      <label>Ricardo - </label><br>
+      <label>Email</label>
+    </div>
   </div>
-  <div class="w3-center"> 
-      <p>Contactos:</p>
-      <p>Andrea</p>
-      <p>Ricardo</p>
-      <p>Email:</p>
-      <p>Facebook</p>
-      <p>Instagram</p>
-  </div>  
 </footer>
+
+
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+ // document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+ // document.getElementById("openNav").style.display = "inline-block";
+}
+</script>

@@ -17,13 +17,24 @@
 		  background-repeat: no-repeat;
 		  background-size: cover;
 		}
-		
+		.tamanho1{
+        width: 22%;
+        height: 10%;
+        margin-top: 2%;
+    	}
+
 	</style>
 </head>
 <body id="main">
 	<?php
 	include('navbar1.html');
-	include('slider.html');
+	?>
+	<div class="w3-center">
+		<a href="index_soubre.php">
+			<img class="tamanho1" src="img/cor1.png" style="margin-bottom: 0%;">
+		</a>
+	</div>
+	<?php
 	include('footer.html');
 	?>
 </body>
